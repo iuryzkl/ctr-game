@@ -145,7 +145,7 @@ function rolarDado() {
     let novo_numero = (Math.floor(Math.random() * 1000) % 6) + 1;
 
     dado.style.rotate = (dado.style.rotate == "0deg") ? "720deg" : "0deg";
-    dado.src = `../../imgs/mecanicas/dice-${novo_numero}.svg`;
+    dado.src = `https://iuryzkl.github.io/ctr-game/dice-${novo_numero}.svg`;
     dado.alt = `Dado de ${novo_numero} lados`;
 
     
