@@ -1,0 +1,343 @@
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+    position: absolute;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.principal{
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+#perguntaContainer{
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 0vh;
+    position: relative;
+    border-radius: 10px;
+    width: 20%;
+}
+
+p{
+    display: flex;
+    width: 98%;
+    height: auto;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    box-shadow: 1px 1px 1px 2px #333;
+    border-radius: 5px;
+    text-decoration: none;
+    word-wrap: break-word;
+    color: white;
+    background-color: #ffffff;
+    color: rgb(102, 100, 100);
+}
+#alternativas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border: 0vh;
+    margin-top: 5%;
+    margin-left: 7%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #d4af37;
+    cursor: pointer;
+}
+
+button:hover{
+    display: inline;
+    width: 100px;
+    height: 50px;
+    border: 0vh;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #a7830e;
+    cursor: pointer;
+}
+
+.trilha {
+    margin-top: 1.5%;
+    margin-left: 50px;
+    scale: auto;
+    width: auto;
+    display: flex;
+    gap: 0px; 
+}
+
+
+img {
+    width: 37.5px;
+    height: auto;
+    object-fit: cover;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges; 
+}
+
+.ponto-inicial{
+    display: flex;
+    align-items: center;
+    background: url(../../imgs/caminhos/inicio.png) no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+.ponto-inicial .players{
+    display: flex;
+    align-items: center;
+}
+
+.coluna1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.coluna1 .caminho-normal{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.caminho-normal{
+    display: flex;
+    flex-direction: column;
+    background: url(../../imgs/caminhos/caminho-normal.png) no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+ .players{
+    display: flex;
+    align-items: center;
+}
+.coluna2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.coluna2 .caminho-normal{
+    display: flex;
+    align-items: center;
+}
+
+.linha-caminho-normal{
+    display: flex;
+    align-items: center;
+    background: url(../../imgs/caminhos/caminho-normal.png) no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+
+.linha-com-coluna{
+    display: flex;
+    align-content: space-around;
+}
+
+.linha1{
+    margin-top: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../imgs/caminhos/caminho-normal.png) no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+.coluna3{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.coluna3 .caminho-normal{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.ponto-final{
+    display: flex;
+    background: url(../../imgs/caminhos/final.png) no-repeat;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1.5%;
+    margin-right: 30px;
+    width: 20%;
+
+}
+nav img{
+    width: 37.5px;
+    height: 37.5px;
+    cursor: pointer;
+}
+
+.pause-tab {
+
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+
+    border-radius: 5px;
+    
+}
+
+.menu {
+    display: none; /* Esconde o menu por padrão */
+    position: absolute; /* Posiciona o menu de forma absoluta */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para que fique no centro */
+    background-color: #d4af37;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover {
+    background-color: #a7830e;
+}
+.menu li a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.mecanicas{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+#rolar-iniciativa {
+
+    width: 20%;
+}
+
+#rolar-iniciativa button {
+    height: 40%;
+    width: 40%;
+    cursor: pointer;
+    transition: height 1s, width 1s;
+
+    border: none;
+    background-color: white;
+}
+
+#rolar-iniciativa button:hover {
+    height: 45%;
+    width: 45%;
+}
+
+#rolar-iniciativa button figure {
+    width: 90%;
+    margin: 0%;
+}
+
+#img-dado {
+    width: 100%;
+    rotate: 0deg;
+    transition: rotate 1s;
+}
+
+#rolar-iniciativa button figure figcaption {
+    width: 100%;
+    border-radius: 25px;
+
+    padding: 10px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
+
+.invisivel {
+    display: none;
+}
+
+.infoVez{
+    scale: 1.5;
+    font-size: large;
+    font-weight: bold;
+}
+
+#perguntaTexto{
+    font-size: large;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}

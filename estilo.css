@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.equations {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.equations p {
+    position: absolute;
+    font-size: 1.2em;
+}
+
+.equations p:nth-child(1) {
+    top: -100px;
+    left: -150px;
+    transform: rotate(-15deg);
+}
+
+.equations p:nth-child(2) {
+    top: -150px;
+    right: -100px;
+    transform: rotate(10deg);
+}
+
+.equations p:nth-child(3) {
+    bottom: -100px;
+    left: -150px;
+    transform: rotate(-10deg);
+}
+
+.equations p:nth-child(4) {
+    bottom: -150px;
+    right: -150px;
+    transform: rotate(15deg);
+}
+
+.equations p:nth-child(5) {
+    bottom: 0;
+    right: -200px;
+    transform: rotate(-5deg);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #d4af37;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: #b89f30;
+}

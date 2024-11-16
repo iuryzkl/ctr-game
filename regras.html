@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras</title>
+    <link rel="stylesheet" href="../../styles/inicio/regras.css">
+</head>
+<body>
+    <div class="rules-container">
+        <!-- Botão para voltar ao menu -->
+        <a href="../../index.html" class="back-button">&larr;</a>
+        <h1>Regras</h1>
+
+        <!-- Conteúdo das regras (8 telas) -->
+        <div class="rule-slide">
+            <!-- Tela 1 -->
+            <div class="rule-content" id="slide1">
+                <p>Como o jogo é inspirado em tabuleiros como Monopoly ou Banco Imobiliário, então os níveis serão as casas que os jogadores terão que passar até o fim da trilha.</p>
+                <img src="../../imgs/path-diagram.png" alt="Caminho do Jogo" class="diagram-image">
+            </div>
+            
+            <!-- Tela 2 -->
+            <div class="rule-content" id="slide2">
+                <p>O jogo começa com o jogador 1. Ele tem que clicar com o botão esquerdo do mouse na imagem do dado. Assim que ele clicar no dado, o dado mostrará quantas casas ele vai avançar, mas para isso acontecer, ele terá que responder a uma questão de física.</p>
+                <img src="../../imgs/player-icons.png" alt="Ícones dos Jogadores" class="diagram-image">
+            </div>
+            
+            <!-- Tela 3 -->
+            <div class="rule-content" id="slide3">
+                <p>Quando a questão de física aparecer, ele tem direito a clicar em um dos dois balões que irá aparecer embaixo da caixa da pergunta.</p>
+                <img src="../../imgs/question-example.png" alt="Exemplo de Questão" class="diagram-image">
+            </div>
+            
+            <!-- Tela 4 -->
+            <div class="rule-content" id="slide4">
+                <p>Caso o jogador acerte a questão, irá aparecer uma mensagem escrita que o jogador acertou e depois disso, os balões de resposta sumirão e a pergunta também, e o jogador da rodada irá avançar para a casa conforme o número sorteado.</p>
+            </div>
+            
+            <!-- Tela 5 -->
+            <div class="rule-content" id="slide5">
+                <p>Caso o jogador erre a questão, aparecerá uma mensagem escrita que o jogador errou e depois disso, os balões de resposta sumirão e a pergunta também, e o jogador da vez não irá avançar para a casa sorteada através do dado. Assim, passando a vez para o outro jogador.</p>
+            </div>
+            
+            <!-- Tela 6 -->
+            <div class="rule-content" id="slide6">
+                <p>Vale ressaltar que se o jogador errar a questão, essa questão será descartada, assim não havendo a possibilidade do outro pegar a mesma questão ou o mesmo pegá-la outra vez. Isso vale também para caso o jogador acerte.</p>
+            </div>
+            
+            <!-- Tela 7 -->
+            <div class="rule-content" id="slide7">
+                <p>Outra coisa, por exemplo, se caso o jogador estiver a 3 casas do final da trilha, ele tem que tirar 3 no dado ou um número menor que 3, caso contrário, a vez vai ser passada para o próximo.</p>
+            </div>
+            
+            <!-- Tela 8 -->
+            <div class="rule-content" id="slide8">
+                <p>Quem chegar primeiro no final da trilha ganhará a partida, boa sorte!</p>
+            </div>
+            
+            <!-- Botões de Navegação -->
+            <div class="navigation-buttons">
+                <button onclick="prevSlide()">&#8592;</button>
+                <button onclick="nextSlide()">&#8594;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../codes/inicio/regras.js"></script>
+</body>
+</html>
