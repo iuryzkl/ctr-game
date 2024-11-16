@@ -100,7 +100,7 @@ img {
 .ponto-inicial{
     display: flex;
     align-items: center;
-    background: url(https://iuryzkl.github.io/ctr-game/inicio.png) no-repeat;
+    background: url("https://iuryzkl.github.io/ctr-game/inicio.png") no-repeat;
     background-size: 100%;
     width: 75px;
     height: 75px;
@@ -128,7 +128,7 @@ img {
 .caminho-normal{
     display: flex;
     flex-direction: column;
-    background: url(https://iuryzkl.github.io/ctr-game/caminho-normal.png) no-repeat;
+    background: url("https://iuryzkl.github.io/ctr-game/caminho-normal.png") no-repeat;
     background-size: 100%;
     width: 75px;
     height: 75px;
@@ -155,7 +155,7 @@ img {
 .linha-caminho-normal{
     display: flex;
     align-items: center;
-    background: url(https://iuryzkl.github.io/ctr-game/caminho-normal.png) no-repeat;
+    background: url("https://iuryzkl.github.io/ctr-game/caminho-normal.png") no-repeat;
     background-size: 100%;
     width: 75px;
     height: 75px;
@@ -174,7 +174,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://iuryzkl.github.io/ctr-game/caminho-normal.png) no-repeat;
+    background: url("https://iuryzkl.github.io/ctr-game/caminho-normal.png") no-repeat;
     background-size: 100%;
     width: 75px;
     height: 75px;
@@ -195,7 +195,7 @@ img {
 
 .ponto-final{
     display: flex;
-    background: url(https://iuryzkl.github.io/ctr-game/final.png) no-repeat;
+    background: url("https://iuryzkl.github.io/ctr-game/final.png") no-repeat;
     background-size: 100%;
     width: 75px;
     height: 75px;
